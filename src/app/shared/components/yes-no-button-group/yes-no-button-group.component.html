@@ -1,0 +1,25 @@
+<div
+  class="button-group"
+  role="radiogroup"
+  aria-labelledby="label"
+>
+  <label id="label" class="label">{{ label }}</label>
+  <button
+    role="radio"
+    type="button"
+    class="button button-yes"
+    (click)="activate(options.YES)"
+    [class.button-pressed]="value === options.YES"
+  >
+    Yes
+  </button>
+  <button
+    role="radio"
+    type="button"
+    class="button button-no"
+    (click)="activate(options.NO)"
+    [class.button-pressed]="value === options.NO"
+  >
+    No
+  </button>
+</div>
